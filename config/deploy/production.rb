@@ -7,6 +7,8 @@
 server '104.236.122.224', user: 'deployer', roles: %w{web}
 # server 'db.example.com', user: 'deploy', roles: %w{db}
 
+set :deploy_to, "/home/deployer/railsapp"
+set :rails_env, :production
 
 
 # role-based syntax
